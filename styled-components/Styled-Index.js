@@ -14,16 +14,16 @@ export const StyledHeader = styled.header`
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-	font-size: 25ch;
+	font-size: 6ch;
 	font-weight: lighter;
 	padding: 8px;
 	gap: 30px;
 	margin-bottom: 50px;
-	@media (max-width: 576px) {
+	/* @media (max-width: 576px) {
 		font-size: 6ch;
 		top: 0.5em;
 		height: auto;
-	}
+	} */
 	@media (min-width: 768px) {
 		height: 5em;
 	}
