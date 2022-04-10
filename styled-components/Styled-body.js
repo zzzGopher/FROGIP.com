@@ -6,14 +6,13 @@ export const BodyContainer = styled.div`
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	gap: 18px;
 	padding: 10px;
 	z-index: 99;
 	justify-content: start;
 	align-items: center;
 	width: 100vw;
 	height: auto;
-	gap: 30px;
 
 	background-color: white;
 	@media (min-width: ${(props) => {
@@ -35,6 +34,8 @@ export const FrameworkSquare = styled.div`
 	align-items: center;
 	justify-content: center;
 	border-radius: 3px;
+	padding: 8px;
+	margin-bottom: 4px;
 `;
 
 export const FrameworkText = styled.span`
@@ -52,12 +53,17 @@ export const PicContainer = styled.div`
 	z-index: 999;
 	align-items: center;
 	justify-content: space-evenly;
+	padding: 8px;
 `;
 
 export const BodyText = styled.div`
 	font-size: 18px;
 	font-weight: 500;
+	display: flex;
+	align-items: top;
+	justify-content: center;
 	text-align: center;
 	padding: 10px;
 	max-width: 400px;
+	min-height: 90px;
 `;
