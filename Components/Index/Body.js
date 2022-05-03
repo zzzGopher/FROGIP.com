@@ -7,13 +7,7 @@ import {
 	BodyText,
 } from "/styled-components/Home/Styled-body";
 import Image from "next/image";
-import {
-	StyledH1,
-	BlueText,
-	TextBox,
-} from "../../styled-components/Home/Text-styled";
-
-let SectionImages = {id: 1, image1: "/code.jpg"};
+import Chemistry from "./Chemistry";
 
 function Body(props) {
 	console.log(props);
@@ -49,6 +43,7 @@ function Body(props) {
 						? props.text.id3.body
 						: ""}
 				</BodyText>
+				<Chemistry />
 			</BodyContainer>
 		</>
 	);
