@@ -3,7 +3,7 @@ import {
 	MobileContainer,
 	MobileLeft,
 	MobileRight,
-} from "../styled-components/StyledMobileBanner";
+} from "/styled-components/Home/StyledMobileBanner";
 
 function MobileBanner() {
 	return (

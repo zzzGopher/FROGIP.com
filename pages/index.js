@@ -1,12 +1,12 @@
 /** @format */
 
 import Head from "next/head";
-import Header from "../Components/Header";
-import Body from "../Components/Body";
-import Chemistry from "../Components/Chemistry";
+import Header from "../Components/Index/Header";
+import Body from "../Components/Index/Body";
+import Chemistry from "../Components/Index/Chemistry";
 import {useState} from "react";
-import MobileBanner from "../Components/MobleSectionTitle";
-import MobileHero from "../Components/MobileHero";
+import MobileBanner from "../Components/Index/MobleSectionTitle";
+import MobileHero from "../Components/Index/MobileHero";
 
 export default function Home({frameWorkTextContent}) {
 	const [title, setTitle] = useState("React");
@@ -15,6 +15,7 @@ export default function Home({frameWorkTextContent}) {
 		text: {
 			id1: {
 				//state title that needs to be fixed
+
 				title: title,
 				body: "A JavaScript library for building user interfaces",
 			},

@@ -1,5 +1,5 @@
 /** @format */
-import {ChemBox} from "../styled-components/Chemistry";
+import {ChemBox} from "/styled-components/Home/Chemistry";
 import {Icon} from "@iconify/react";
 
 function Chemistry() {

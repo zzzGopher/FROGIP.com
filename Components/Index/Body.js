@@ -5,9 +5,13 @@ import {
 	FrameworkText,
 	PicContainer,
 	BodyText,
-} from "../styled-components/Styled-body";
+} from "/styled-components/Home/Styled-body";
 import Image from "next/image";
-import {StyledH1, BlueText, TextBox} from "../styled-components/Text-styled";
+import {
+	StyledH1,
+	BlueText,
+	TextBox,
+} from "../../styled-components/Home/Text-styled";
 
 let SectionImages = {id: 1, image1: "/code.jpg"};
 
@@ -21,7 +25,15 @@ function Body(props) {
 				</FrameworkSquare>
 				<PicContainer>
 					<Image
-						src={SectionImages.image1}
+						src={
+							props.text.id1.title === "React"
+								? "/react_js.png"
+								: props.text.id2.title === "Strapi"
+								? "/strapi.png"
+								: props.text.id3.title === "Shopify"
+								? "/best-shopify-apps.jpg"
+								: ""
+						}
 						layout="fixed"
 						width={"280%"}
 						height={"130%"}

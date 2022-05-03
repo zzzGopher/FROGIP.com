@@ -6,7 +6,7 @@ import {
 	IconContainer,
 	ListContainer_2,
 	ContainerHeader,
-} from "../styled-components/Nav-styled";
+} from "/styled-components/Home/Nav-styled";
 import {Icon} from "@iconify/react";
 import Image from "next/image";
 

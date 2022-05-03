@@ -27,8 +27,8 @@ export const BodyContainer = styled.div`
 
 export const FrameworkSquare = styled.div`
 	background-color: black;
-	width: 100px;
-	height: 40px;
+	width: 150px;
+	height: 50px;
 	display: flex;
 	margin-top: 50px;
 	align-items: center;
@@ -46,10 +46,10 @@ export const FrameworkText = styled.span`
 
 export const PicContainer = styled.div`
 	display: flex;
-	background-color: rgba(0, 0, 0, 0.26);
-	width: 60%;
+	background-color: rgba(0, 0, 0, 0.14);
+	max-width: 75%;
 	height: 150px;
-	border-radius: 10px;
+	border-radius: 7px;
 	z-index: 999;
 	align-items: center;
 	justify-content: space-evenly;

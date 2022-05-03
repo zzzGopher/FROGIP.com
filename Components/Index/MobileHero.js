@@ -4,7 +4,7 @@ import {
 	MobileFlexColumns,
 	HeroText,
 	MobileBottomText,
-} from "../styled-components/StyledMobileSection";
+} from "../../styled-components/Home/StyledMobileSection";
 import Image from "next/image";
 
 function MobileHero() {

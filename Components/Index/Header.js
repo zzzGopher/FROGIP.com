@@ -1,8 +1,8 @@
 /** @format */
 
-import {StyledHeader} from "../styled-components/Styled-Index";
+import {StyledHeader} from "/styled-components/Home/Styled-Index";
 import {Icon} from "@iconify/react";
-import {StyledButton} from "../styled-components/Button";
+import {StyledButton} from "/styled-components/Home/Button";
 import {
 	MiddleSelector,
 	FlexRow,
@@ -10,7 +10,7 @@ import {
 	SelectionBox,
 	SelectionBoxBorder,
 	SelectionBoxBorderMiddle,
-} from "../styled-components/Styled-MiddleSelector";
+} from "/styled-components/Home/Styled-MiddleSelector";
 
 function Header(props) {
 	return (

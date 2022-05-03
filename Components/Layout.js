@@ -1,7 +1,7 @@
 /** @format */
 
-import Nav from "./Nav";
-import Triangle from "./Triangle";
+import Nav from "./Index/Nav";
+import Triangle from "./Index/Triangle";
 import Footer from "./Footer";
 
 export function Layout({children}) {
