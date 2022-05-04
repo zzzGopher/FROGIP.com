@@ -10,7 +10,6 @@ import Image from "next/image";
 import Chemistry from "./Chemistry";
 
 function Body(props) {
-	console.log(props);
 	return (
 		<>
 			<BodyContainer>

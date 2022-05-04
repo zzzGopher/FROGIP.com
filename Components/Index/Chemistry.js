@@ -1,6 +1,10 @@
 /** @format */
 import {ChemBox, Icontainer} from "/styled-components/Home/Chemistry";
-import {Bubbles, Bubbles2} from "../../styled-components/Home/Bubbles";
+import {
+	Bubbles,
+	Bubbles2,
+	Bubbles3,
+} from "../../styled-components/Home/Bubbles";
 import {Icon} from "@iconify/react";
 
 function Chemistry() {
@@ -9,6 +13,7 @@ function Chemistry() {
 			<ChemBox>
 				<Bubbles />
 				<Bubbles2 />
+				<Bubbles3 />
 				<Icontainer>
 					<Icon
 						className="vial"
