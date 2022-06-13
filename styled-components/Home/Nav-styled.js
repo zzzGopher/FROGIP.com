@@ -12,10 +12,12 @@ export const StyledNav = styled.div`
 	justify-content: center;
 	@media (min-width: 670px) {
 		justify-content: flex-end;
+		padding: 10px;
 	}
 	@media (min-width: ${(props) => {
 			return props.theme.screen.medium;
 		}}) {
+		width: 100%;
 	}
 `;
 
@@ -71,28 +73,14 @@ export const ContainerHeader = styled.div`
 			return props.theme.screen.medium;
 		}}) {
 		width: ${(props) => {
-			return props.theme.screen.small;
-		}};
-	}
-	@media (min-width: ${(props) => {
-			return props.theme.screen.large;
-		}}) {
-		width: ${(props) => {
 			return props.theme.screen.medium;
 		}};
-	}
-	@media (min-width: ${(props) => {
-			return props.theme.screen.xl;
-		}}) {
-		width: ${(props) => {
-			return props.theme.screen.large;
-		}};
-	}
-	@media (min-width: ${(props) => {
-			return props.theme.screen.xxl;
-		}}) {
-		width: ${(props) => {
-			return props.theme.screen.xl;
-		}};
+		@media (min-width: ${(props) => {
+				return props.theme.screen.large;
+			}}) {
+			width: ${(props) => {
+				return props.theme.screen.large;
+			}};
+		}
 	}
 `;

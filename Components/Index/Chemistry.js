@@ -4,6 +4,7 @@ import {
 	Bubbles,
 	Bubbles2,
 	Bubbles3,
+	Bubbles4,
 } from "../../styled-components/Home/Bubbles";
 import {Icon} from "@iconify/react";
 
@@ -14,6 +15,7 @@ function Chemistry() {
 				<Bubbles />
 				<Bubbles2 />
 				<Bubbles3 />
+				<Bubbles4 />
 				<Icontainer>
 					<Icon
 						className="vial"

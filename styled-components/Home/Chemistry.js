@@ -18,6 +18,9 @@ export const ChemBox = styled.div`
 	@media (min-width: 600px) {
 		visibility: visible;
 	}
+	@media (min-width: ${(props) => props.theme.screen.medium}) {
+		top: 645px;
+	}
 `;
 
 export const Icontainer = styled.div`
@@ -28,7 +31,7 @@ export const Icontainer = styled.div`
 	width: 70%;
 	.vial {
 		z-index: 999;
-		margin-bottom: -30px;
+		margin-bottom: -32px;
 		align-self: flex-end;
 	}
 `;

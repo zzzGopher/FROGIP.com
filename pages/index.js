@@ -9,7 +9,7 @@ import MobileBanner from "../Components/Index/MobleSectionTitle";
 import MobileHero from "../Components/Index/MobileHero";
 
 export default function Home({frameWorkTextContent}) {
-	const [title, setTitle] = useState("React");
+	const [title, setTitle] = useState("Speed");
 
 	frameWorkTextContent = {
 		text: {

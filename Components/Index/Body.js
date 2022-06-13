@@ -5,6 +5,7 @@ import {
 	FrameworkText,
 	PicContainer,
 	BodyText,
+	BodyMainContainer,
 } from "/styled-components/Home/Styled-body";
 import Image from "next/image";
 import Chemistry from "./Chemistry";
@@ -12,38 +13,46 @@ import Chemistry from "./Chemistry";
 function Body(props) {
 	return (
 		<>
-			<BodyContainer>
-				<FrameworkSquare>
-					<FrameworkText>{props.text.id1.title}</FrameworkText>
-				</FrameworkSquare>
-				<PicContainer>
-					<Image
-						src={
-							props.text.id1.title === "React"
-								? "/react_js.png"
-								: props.text.id2.title === "Strapi"
-								? "/strapi.png"
-								: props.text.id3.title === "Shopify"
-								? "/best-shopify-apps.jpg"
-								: ""
-						}
-						layout="fixed"
-						width={"280%"}
-						height={"130%"}
-					></Image>
-				</PicContainer>
+			<BodyMainContainer>
+				<BodyContainer>
+					<FrameworkSquare>
+						<FrameworkText>{props.text.id1.title}</FrameworkText>
+					</FrameworkSquare>
+					<PicContainer>
+						<div
+							style={{
+								width: "100%",
+								height: "100%",
+								position: "relative",
+							}}
+						>
+							<Image
+								src={
+									props.text.id1.title === "Speed"
+										? "/react_js.png"
+										: props.text.id2.title === "Ranking"
+										? "/strapi.png"
+										: props.text.id3.title === "Backlinks"
+										? "/best-shopify-apps.jpg"
+										: ""
+								}
+								layout="fill"
+							></Image>
+						</div>
+					</PicContainer>
 
-				<BodyText>
-					{props.text.id1.title === "React"
-						? props.text.id1.body
-						: props.text.id2.title === "Strapi"
-						? props.text.id2.body
-						: props.text.id3.title === "Shopify"
-						? props.text.id3.body
-						: ""}
-				</BodyText>
-				<Chemistry />
-			</BodyContainer>
+					<BodyText>
+						{props.text.id1.title === "Speed"
+							? props.text.id1.body
+							: props.text.id2.title === "Ranking"
+							? props.text.id2.body
+							: props.text.id3.title === "Backlinks"
+							? props.text.id3.body
+							: ""}
+					</BodyText>
+					<Chemistry />
+				</BodyContainer>
+			</BodyMainContainer>
 		</>
 	);
 }

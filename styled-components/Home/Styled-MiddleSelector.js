@@ -1,9 +1,14 @@
 /** @format */
 
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 export const SelectorContainer = styled.section`
 	max-width: 900px;
+	@media (min-width: ${(props) => {
+			return (props) => props.theme.screen.medium;
+		}}) {
+		max-width: 60%;
+	}
 `;
 
 export const MiddleSelector = styled.div`
