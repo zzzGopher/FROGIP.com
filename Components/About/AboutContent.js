@@ -7,6 +7,7 @@ import {
 	ScribbleContainer,
 	ListTitles,
 	ListFlex,
+	Paragraph,
 } from "../../styled-components/About/Styled-Content";
 
 function Content() {
@@ -32,29 +33,51 @@ function Content() {
 						</div>
 						Search Ranking
 					</ListTitles>
-					<p>
+					<Paragraph>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ut temporibus, praesentium sequi quasi nostrum facilis
 						officia iusto pariatur aspernatur eum debitis vero velit
 						consequuntur doloribus nam incidunt, reprehenderit hic
 						rerum?
-					</p>
-					<ListTitles>Better Practices</ListTitles>
-					<p>
+					</Paragraph>
+					<ListTitles>
+						<div
+							style={{
+								width: "80px",
+								height: "100px",
+								position: "relative",
+							}}
+						>
+							<Image src={"/about_bullets4.svg"} layout="fill" />
+						</div>
+						Better Practices
+					</ListTitles>
+					<Paragraph>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ut temporibus, praesentium sequi quasi nostrum facilis
 						officia iusto pariatur aspernatur eum debitis vero velit
 						consequuntur doloribus nam incidunt, reprehenderit hic
 						rerum?
-					</p>
-					<ListTitles>More Views</ListTitles>
-					<p>
+					</Paragraph>
+					<ListTitles>
+						<div
+							style={{
+								width: "80px",
+								height: "100px",
+								position: "relative",
+							}}
+						>
+							<Image src={"/about_bullets4.svg"} layout="fill" />
+						</div>
+						More Views
+					</ListTitles>
+					<Paragraph>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ut temporibus, praesentium sequi quasi nostrum facilis
 						officia iusto pariatur aspernatur eum debitis vero velit
 						consequuntur doloribus nam incidunt, reprehenderit hic
 						rerum?
-					</p>
+					</Paragraph>
 				</ListFlex>
 			</ul>
 		</ContentContainer>

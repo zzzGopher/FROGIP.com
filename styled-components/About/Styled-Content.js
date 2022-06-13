@@ -18,7 +18,7 @@ export const ContentHeader = styled.h1`
 	position: relative;
 	color: black;
 	font-size: 5ch;
-	height: 80px;
+	height: 50px;
 `;
 
 export const ScribbleContainer = styled.div`
@@ -33,7 +33,7 @@ export const ScribbleContainer = styled.div`
 export const ListTitles = styled.li`
 	display: flex;
 	position: relative;
-	font-size: 4ch;
+	font-size: 3ch;
 	font-weight: 900;
 	color: black;
 	list-style: none;
@@ -43,5 +43,9 @@ export const ListTitles = styled.li`
 export const ListFlex = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+`;
+
+export const Paragraph = styled.p`
+	padding-left: 40px;
+	max-width: 500px;
 `;

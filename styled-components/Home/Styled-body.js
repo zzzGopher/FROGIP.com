@@ -15,13 +15,11 @@ export const BodyContainer = styled.div`
 	flex-direction: column;
 	margin: auto;
 	gap: 18px;
-	padding: 10px;
 	z-index: 99;
 	justify-content: start;
 	align-items: center;
 	width: 90%;
 	height: auto;
-
 	background-color: white;
 	@media (min-width: ${(props) => {
 			return props.theme.screen.medium;

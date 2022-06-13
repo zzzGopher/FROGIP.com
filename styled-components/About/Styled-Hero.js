@@ -33,7 +33,7 @@ export const ImageContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 500;
 	color: black;
 	width: 300px;
