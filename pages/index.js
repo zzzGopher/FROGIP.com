@@ -7,6 +7,7 @@ import Chemistry from "../Components/Index/Chemistry";
 import {useState} from "react";
 import MobileBanner from "../Components/Index/MobleSectionTitle";
 import MobileHero from "../Components/Index/MobileHero";
+import Triangle from "../Components/Index/Triangle";
 
 export default function Home({frameWorkTextContent}) {
 	const [title, setTitle] = useState("Speed");
@@ -32,6 +33,7 @@ export default function Home({frameWorkTextContent}) {
 
 	return (
 		<>
+			<Triangle />
 			<Header
 				title={title}
 				setTitle={setTitle}

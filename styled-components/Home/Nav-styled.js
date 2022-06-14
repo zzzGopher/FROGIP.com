@@ -11,7 +11,7 @@ export const StyledNav = styled.div`
 	align-items: center;
 	justify-content: center;
 	@media (min-width: 670px) {
-		justify-content: flex-end;
+		justify-content: flex-start;
 		padding: 10px;
 	}
 	@media (min-width: ${(props) => {
@@ -80,6 +80,20 @@ export const ContainerHeader = styled.div`
 			}}) {
 			width: ${(props) => {
 				return props.theme.screen.large;
+			}};
+		}
+		@media (min-width: ${({theme}) => {
+				return theme.screen.xl;
+			}}) {
+			width: ${({theme}) => {
+				return theme.screen.xl;
+			}};
+		}
+		@media (min-width: ${({theme}) => {
+				return theme.screen.xxl;
+			}}) {
+			width: ${({theme}) => {
+				return theme.screen.xxl;
 			}};
 		}
 	}

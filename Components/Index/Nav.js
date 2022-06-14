@@ -34,7 +34,9 @@ export default function Nav(props) {
 					</Link>
 					<li>Contact</li>
 					<li>Pricing</li>
-					<li>Seo</li>
+					<Link href={"/seo"}>
+						<li>Seo</li>
+					</Link>
 					<li>Help</li>
 				</ListContainer_2>
 				<IconContainer>

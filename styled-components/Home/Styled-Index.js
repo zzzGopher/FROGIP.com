@@ -13,7 +13,7 @@ export const StyledHeader = styled.header`
 	top: 0.5em;
 
 	z-index: 2;
-	height: auto;
+	max-height: 300px;
 	padding: 0 8px;
 	display: flex;
 	justify-content: center;
@@ -55,8 +55,8 @@ export const HeaderImageContainer = styled.div`
 		visibility: visible;
 		position: relative;
 		padding: 8px;
-		width: 90%;
-		height: 90%;
+		width: 75%;
+		height: 100%;
 		background-color: ${(props) => {
 			return props.theme.color.primary;
 		}};

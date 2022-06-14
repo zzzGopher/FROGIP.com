@@ -14,6 +14,13 @@ const theme = {
 		xl: "1200px",
 		xxl: "1400px",
 	},
+	font: {
+		sm: "calc(12px + 1vw)",
+		md: "calc(16px + 1.5vw)",
+		lg: "calc(18px + 1.8vw)",
+		xl: "calc(32px + 3vw)",
+		paragraph: "calc(16px + 1vw)",
+	},
 };
 
 function MyApp({Component, pageProps}) {

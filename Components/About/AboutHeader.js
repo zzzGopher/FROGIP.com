@@ -1,8 +1,18 @@
 /** @format */
-import {Header} from "../../styled-components/About/Styled-Header";
+import {
+	Header,
+	HeaderContainer,
+	HeaderBlur,
+} from "../../styled-components/About/Styled-Header";
 
 function AboutHeader() {
-	return <Header>About Frogip</Header>;
+	return (
+		<HeaderContainer>
+			<Header>
+				About Frogip <HeaderBlur>About</HeaderBlur>
+			</Header>
+		</HeaderContainer>
+	);
 }
 
 export default AboutHeader;
