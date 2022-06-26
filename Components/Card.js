@@ -18,7 +18,11 @@ function Card() {
 					icon="fluent:top-speed-24-regular"
 					color="black"
 					height="32"
-					style={{"z-index": "90", alignSelf: "start"}}
+					style={{
+						zIndex: "90",
+						alignSelf: "start",
+						marginLeft: "18px",
+					}}
 				/>
 				<CardHeadingFont>Load Speed</CardHeadingFont>
 				<CardParagraph>

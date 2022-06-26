@@ -8,7 +8,6 @@ function Seo() {
 	return (
 		<>
 			<SeoHeader />
-
 			<SeoBody />
 		</>
 	);

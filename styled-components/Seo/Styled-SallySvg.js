@@ -14,7 +14,7 @@ export const SallyFlex = styled.div`
 	display: flex;
 	width: auto;
 	height: calc(100px + 50vw);
-	max-height: 800px;
+	max-height: 600px;
 	flex-direction: column;
 	background-color: red;
 	justify-content: end;

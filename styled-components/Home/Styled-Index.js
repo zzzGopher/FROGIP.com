@@ -20,7 +20,7 @@ export const StyledHeader = styled.header`
 	align-items: center;
 	text-align: center;
 	flex-direction: column;
-	width: 100vw;
+
 	font-size: 6ch;
 	font-weight: regular;
 	padding: 8px;

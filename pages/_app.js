@@ -15,11 +15,14 @@ const theme = {
 		xxl: "1400px",
 	},
 	font: {
-		sm: "calc(12px + 1vw)",
+		sm: "calc(8px + 1vw)",
 		md: "calc(16px + 1.5vw)",
 		lg: "calc(18px + 1.8vw)",
 		xl: "calc(32px + 3vw)",
-		paragraph: "calc(16px + 1vw)",
+		paragraph: "calc(12px + 1vw)",
+	},
+	margin: {
+		base: "5rem",
 	},
 };
 

@@ -13,12 +13,13 @@ export const ContentContainer = styled.div`
 	height: 100%;
 	width: 100%;
 	display: flex;
-	gap: 20px;
+	gap: 40px;
 	padding: 18px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
 	margin-inline: auto;
+
 	@media (min-width: ${(props) => {
 			return props.theme.screen.medium;
 		}}) {
@@ -53,17 +54,21 @@ export const ContentContainer = styled.div`
 
 export const ContentHeaderFlex = styled.div`
 	display: flex;
-	justify-content: center;
+	align-self: center;
 	flex-direction: column;
 	width: auto;
 	height: auto;
 	padding-left: 30px;
+	@media (min-width: ${({theme}) => theme.screen.small}) {
+		align-self: start;
+	}
 `;
 
 export const ContentHeader = styled.h1`
 	position: relative;
+
 	color: black;
-	font-size: ${({theme}) => theme.font.xl};
+	font-size: ${({theme}) => theme.font.lg};
 	height: auto;
 	width: auto;
 `;
@@ -72,7 +77,7 @@ export const ScribbleContainer = styled.div`
 	width: 80px;
 	height: 80px;
 	top: 65%;
-	left: 10px;
+	left: 12%;
 	position: absolute;
 	transform: rotate(50deg);
 	@media (min-width: ${({theme}) => theme.screen.medium}) {
@@ -88,7 +93,7 @@ export const ScribbleContainer = styled.div`
 export const ListTitles = styled.li`
 	display: flex;
 	position: relative;
-	font-size: ${({theme}) => theme.font.lg};
+	font-size: ${({theme}) => theme.font.md};
 	font-weight: 900;
 	color: black;
 	list-style: none;

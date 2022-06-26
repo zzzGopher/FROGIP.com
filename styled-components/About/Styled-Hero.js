@@ -89,11 +89,10 @@ export const ImageContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
-	font-size: ${({theme}) => theme.font.paragraph};
-	font-weight: 600;
+	font-weight: 500;
 	color: black;
 	width: auto;
-
+	font-size: 20px;
 	height: auto;
 	text-align: center;
 	@media (min-width: ${({theme}) => {
@@ -101,5 +100,6 @@ export const TextContainer = styled.div`
 		}}) {
 		text-align: left;
 		width: 800px;
+		font-size: ${({theme}) => theme.font.sm};
 	}
 `;

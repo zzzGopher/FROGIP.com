@@ -11,7 +11,6 @@ export const StyledNav = styled.div`
 	align-items: center;
 	justify-content: center;
 	@media (min-width: 670px) {
-		justify-content: flex-start;
 		padding: 10px;
 	}
 	@media (min-width: ${(props) => {
@@ -69,6 +68,9 @@ export const ContainerHeader = styled.div`
 	margin-inline: auto;
 	width: 100vw;
 	height: auto;
+	background-color: ${(props) => {
+		return props.color;
+	}};
 	@media (min-width: ${(props) => {
 			return props.theme.screen.medium;
 		}}) {

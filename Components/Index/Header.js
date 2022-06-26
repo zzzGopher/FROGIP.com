@@ -16,33 +16,39 @@ import {
 	SelectionBoxBorderMiddle,
 } from "/styled-components/Home/Styled-MiddleSelector";
 import Image from "next/image";
+import {ContainerHeader} from "../../styled-components/Home/Nav-styled";
 
 function Header(props) {
 	return (
 		<>
 			<StyledHeaderContainer>
-				<StyledHeader>
-					<div className="text">We Build Websites!</div>
-					<HeaderImageContainer>
-						<div
-							style={{
-								width: "100%",
-								height: "100%",
-								position: "relative",
-							}}
-						>
-							<Image
-								className="jazmine"
-								src={"/jazmine.jpg"}
-								layout="fill"
+				<ContainerHeader>
+					<StyledHeader>
+						<div className="text">We Build Websites!</div>
+						<HeaderImageContainer>
+							<div
+								style={{
+									width: "100%",
+									height: "100%",
+									position: "relative",
+								}}
+							>
+								<Image
+									className="jazmine"
+									src={"/jazmine.jpg"}
+									layout="fill"
+								/>
+							</div>
+						</HeaderImageContainer>
+						<StyledButton>
+							<Icon
+								icon="carbon:phone-voice-filled"
+								height={30}
 							/>
-						</div>
-					</HeaderImageContainer>
-					<StyledButton>
-						<Icon icon="carbon:phone-voice-filled" height={30} />
-						Call Now
-					</StyledButton>
-				</StyledHeader>
+							Call Now
+						</StyledButton>
+					</StyledHeader>
+				</ContainerHeader>
 			</StyledHeaderContainer>
 			<SelectorContainer>
 				<MiddleSelector>
