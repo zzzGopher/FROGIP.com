@@ -32,7 +32,9 @@ export default function Nav(props) {
 					<Link href={"/about"}>
 						<li style={{color: "black"}}>About</li>
 					</Link>
-					<li>Contact</li>
+					<Link href={"/contact"}>
+						<li>Contact</li>
+					</Link>
 					<li>Pricing</li>
 					<Link href={"/seo"}>
 						<li>Seo</li>
