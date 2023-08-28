@@ -1,8 +1,9 @@
 /** @format */
 
-import GlobalStyle from "../styles/global-styles";
+// import GlobalStyle from "../styles/global-styles";
 import {ThemeProvider} from "styled-components";
 import {Layout} from "../Components/Layout";
+import GlobalStyle from "../styles/global-styles";
 
 const theme = {
 	color: {primary: "#FF8A00", secondary: "#AEAEAE"},
