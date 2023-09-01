@@ -29,7 +29,8 @@ export const MobileRight = styled.div`
 	align-items: center;
 	height: 100%;
 	width: 50%;
-	justify-content: baseline;
+    position: relative;
+	justify-content: flex-start;
 	padding: 10px;
 	font-size: 40px;
 `;

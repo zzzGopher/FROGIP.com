@@ -13,7 +13,7 @@ function SallyImage() {
 		<SallyContainer>
 			<SallyFlex>
 				<FlexBlack />
-				<Image src={"/Saly.svg"} layout="fill" /> <FlexWhite />
+				<Image alt={"sally svg"} src={"/Saly.svg"} layout="fill" /> <FlexWhite />
 			</SallyFlex>
 		</SallyContainer>
 	);

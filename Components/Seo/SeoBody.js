@@ -11,6 +11,9 @@ import {
 import {ContainerHeader} from "../../styled-components/Home/Nav-styled";
 import Card from "../Card";
 import Image from "next/image";
+import {CardsContext} from "./CardsContext";
+
+
 
 function SeoBody() {
 	return (
@@ -21,13 +24,13 @@ function SeoBody() {
 					<H2>Most Important Benefits</H2>
 				</SeoBodyFlex>
 				<CardFlex>
-					<Card />
-					<Card />
-					<Card />
+					<Card cardTitle={"load speed"} cardBody={CardsContext.card1}/>
+					<Card cardTitle={"load speed"} cardBody={CardsContext.card2} />
+					<Card cardTitle={"load speed"} cardBody={CardsContext.card3} />
 				</CardFlex>
 				<ContainerHeader style={{"padding-bottom": "5rem"}}>
 					<Grid>
-						<Image src={"/rocket.svg"} width={300} height={300} />
+						<Image className={"rocket"} src={"/rocket.svg"} width={"300"} height={300} />
 						<div>
 							<h2>Ranking</h2>
 							<h3>Aim For the Top!</h3>
@@ -44,6 +47,7 @@ function SeoBody() {
 						</div>
 
 						<Image
+							className={"runningMan"}
 							src={"/runningman.svg"}
 							width={300}
 							height={300}
@@ -63,7 +67,7 @@ function SeoBody() {
 							</p>
 						</div>
 
-						<Image src={"/Fingers.svg"} width={300} height={300} />
+						<Image className={"fingers"} src={"/Fingers.svg"} width={300} height={300} />
 						<div>
 							<h2>Backlinks</h2>
 							<h3>Aim For the Top!</h3>

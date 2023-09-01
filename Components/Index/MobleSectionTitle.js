@@ -5,12 +5,15 @@ import {
 	MobileLeft,
 	MobileRight,
 } from "/styled-components/Home/StyledMobileBanner";
+import Chemistry from "./Chemistry";
 
 function MobileBanner() {
 	return (
 		<MobileContainer>
 			<MobileLeft>Mobile</MobileLeft>
-			<MobileRight>Design</MobileRight>
+			<MobileRight>Design
+			<Chemistry/>
+			</MobileRight>
 		</MobileContainer>
 	);
 }

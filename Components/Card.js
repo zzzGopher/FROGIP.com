@@ -9,14 +9,14 @@ import {
 import {Icon} from "@iconify/react";
 import Image from "next/image";
 
-function Card() {
+function Card({ cardBody }) {
+ const {title,body} = cardBody;
 	return (
 		<CardContainer>
 			<CardContainerMain>
 				<Image src={"/seoCardfitted.svg"} layout="fill" />
 				<Icon
 					icon="fluent:top-speed-24-regular"
-					color="black"
 					height="32"
 					style={{
 						zIndex: "90",
@@ -24,10 +24,9 @@ function Card() {
 						marginLeft: "18px",
 					}}
 				/>
-				<CardHeadingFont>Load Speed</CardHeadingFont>
+				<CardHeadingFont>{title}</CardHeadingFont>
 				<CardParagraph>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-					Obcaecati, optio fugit quaerat voluptatibus do
+					{body}
 				</CardParagraph>
 			</CardContainerMain>
 		</CardContainer>

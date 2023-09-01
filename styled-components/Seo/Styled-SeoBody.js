@@ -83,6 +83,11 @@ export const Grid = styled.div`
 	margin-top: ${({theme}) => theme.margin.base};
 	padding: 18px;
 	row-gap: 1rem;
+    justify-content: center;
+
+  .rocket, .runningMan,.fingers {
+    width: 100%;
+  }
 
 	p {
 		font-size: 18px;
